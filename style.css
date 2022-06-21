@@ -132,7 +132,24 @@ table {
   border-spacing: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100;300;400;700&display=swap");
+a:hover {
+  color: #969696;
+  text-decoration: none
+}
+
+@font-face {
+  src: url(./fonts/PostNoBillsColombo-Bold.ttf);
+  src: url(./fonts/PostNoBillsColombo-ExtraBold.ttf);
+  src: url(./fonts/PostNoBillsColombo-Light.ttf);
+  src: url(./fonts/PostNoBillsColombo-Medium.ttf);
+  src: url(./fonts/PostNoBillsColombo-Regular.ttf);
+  src: url(./fonts/PostNoBillsColombo-SemiBold.ttf);
+}
+
+body {
+  width: 1920px;
+  margin: auto;
+}
 
 .top-header {
   background: #000000;
@@ -140,9 +157,17 @@ table {
   height: 44px;
 }
 
-.container {}
+.content-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
 
-.content-container {}
+.top-header-text {
+  padding: 0 0 0 15px;
+}
 
 .top-header-text span,
 .top-header-user span {
@@ -154,14 +179,183 @@ table {
   /* identical to box height */
   /* gray */
   color: #969696;
+  padding: 0 10px;
+  margin: 0;
 }
 
-.top-header-cell-phone {}
+.top-header-cell-phone {
+  position: relative;
+}
 
-.text {}
+.top-header-cell-phone::before {
+  content: '';
+  background-image: url(./img/phone-outline.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: -15px;
 
-  {}
+}
 
-.login {}
+.text {
+  border-left: 1px solid #969696;
+  border-right: 1px solid #969696;
+}
 
-.registration {}
+.top-header-user span {
+  padding: 0;
+  margin: 0;
+}
+
+.login,
+.registration {
+  position: relative;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  /* gray */
+  color: #969696;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -24px;
+  background-image: url(./img/log-in.svg);
+  width: 14px;
+  height: 14px;
+}
+
+.header-navbar {
+  height: 80px;
+  background: #0F0F0F;
+  background-size: cover;
+}
+
+.header-nav {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.header-nav-right {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.header-navbar-nav {
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-logo {
+  margin-left: auto;
+}
+
+.header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-nav-item-center {
+  margin: 0 20px;
+
+}
+
+.header-nav-cart {
+  margin: 0 40px 0 60px;
+
+}
+
+.header-nav-link,
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #969696;
+}
+
+.header-nav-item:hover {
+  background: #1F1F1F;
+  cursor: pointer;
+}
+
+.header-nav-item:hover .header-nav-link,
+.header-nav-item:hover .navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+#header {
+  height: 810px;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(./img/header-bg.svg);
+  padding: 160px 0 0 0;
+}
+
+.header-header {
+  width: 320px;
+  height: 320px;
+  border: 4px solid #FFFFFF;
+  margin: auto;
+  /* padding: 93px 0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-header h1 {
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+
+.header-header h1::after {
+  content: '';
+  width: 179px;
+  height: 2px;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: -5px;
+  left: 67px;
+}
+
+.header-header span {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 7px 0;
+}
+
+.header-content {
+  width: 38%;
+  margin: 80px auto 0;
+}
+
+.header-content p {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
