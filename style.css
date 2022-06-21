@@ -138,6 +138,8 @@ a:hover {
 }
 
 @font-face {
+  font-family: 'Post No Bills Jaffna';
+  font-style: normal;
   src: url(./fonts/PostNoBillsColombo-Bold.ttf);
   src: url(./fonts/PostNoBillsColombo-ExtraBold.ttf);
   src: url(./fonts/PostNoBillsColombo-Light.ttf);
@@ -350,12 +352,12 @@ body {
 }
 
 .header-content p {
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
